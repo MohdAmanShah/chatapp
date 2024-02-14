@@ -1,0 +1,107 @@
+@import url('/styles/themes.css');
+
+.container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+}
+
+header {
+    background-color: var(--accent-color);
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+}
+
+.user-name {
+    color: var(--text-background-color);
+    font-size: 1.5rem;
+}
+
+header>button {
+    background-color: var(--danger);
+    color: var(--text-background-color);
+    border: 0;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+}
+
+.chats {
+    flex-grow: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    padding: .5rem;
+}
+
+.chat-element {
+    background-color: white;
+    color: black;
+    max-width: 70%;
+    width: max-content;
+    padding: .5rem 1rem;
+    height: max-content;
+    border-radius: .5rem;
+    color: var(--message-text-color);
+}
+
+.chat-element>p {
+    text-wrap: wrap;
+    word-wrap: normal;
+}
+
+.sender {
+    background-color: var(--sender);
+    align-self: flex-start;
+}
+
+.reciever {
+    background-color: var(--reciever);
+    align-self: flex-end;
+}
+
+.chat-element>p {
+    margin: 0;
+}
+
+.chats::-webkit-scrollbar {
+    display: none;
+}
+
+[data-form] {
+    border-top: 2px solid white;
+    padding: .5rem;
+}
+
+.input-group {
+    display: flex;
+    background-color: var(--text-background-color);
+}
+
+.input-group>* {
+    border: none;
+}
+
+#message {
+    flex-grow: 1;
+    padding: .6rem .5rem;
+}
+
+#message:focus,
+#message:hover,
+.input-group>button[type="submit"]:hover,
+.input-group>button[type="submit"]:focus {
+    outline: none;
+    box-shadow: 0 0 2px 2px gray;
+}
+
+.input-group>button[type="submit"] {
+    background-color: var(--accent-color);
+    padding: .6rem 2rem;
+    color: var(--text-background-color);
+}

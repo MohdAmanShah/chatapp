@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background-color: rgb(224, 222, 222);
+    --text-background-color: #fcfcfc;
+    --danger: #e05757;
+    --accent-color: #579ee0;
+    --sender: var(--accent-color);
+    --reciever: rgb(59, 176, 59);
+    --message-text-color: rgb(254, 255, 248);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-background-color);
+    color: var(--accent-color);
+}

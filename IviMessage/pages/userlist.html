@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/userlistpage.css">
+    <title>Active Users</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="user-name" data-user></div>
+        <div class="user-list" data-active-users>
+        </div>
+    </div>
+    <button type="button" class="find-new-chat-button" data-find-new-chat-button>New Chat</button>
+    <script src="/scripts/site-scripts/userlist.js"></script>
+</body>
+<template data-active-user-template>
+    <a class="user" href="/pages/chatpage.html">
+        <h2 class="name"></h2>
+        <div class="last-message"></div>
+    </a>
+</template>
+
+</html>

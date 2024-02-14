@@ -1,0 +1,62 @@
+@import url('/styles/themes.css');
+
+
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+[data-form] {
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+    row-gap: .5rem;
+}
+
+[data-submit-button],
+[data-user-name] {
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+    width: 95%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    transition: all 200ms ease-in-out;
+}
+
+[data-user-name] {
+    color: var(--accent-color);
+    border: 2px solid gray;
+}
+
+[data-user-name]:hover,
+[data-user-name]:focus {
+    outline: none;
+    border-color: transparent;
+    box-shadow: 0 0 2px 2px var(--accent-color);
+}
+
+
+[data-submit-button] {
+    cursor: pointer;
+    border: transparent;
+    color: var(--text-background-color);
+    background-color: var(--accent-color);
+}
+
+[data-submit-button]:hover,
+[data-submit-button]:focus {
+    background-color: var(--text-background-color);
+    color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 2px 2px var(--accent-color);
+}

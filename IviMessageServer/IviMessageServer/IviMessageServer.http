@@ -1,0 +1,6 @@
+@IviMessageServer_HostAddress = http://localhost:5284
+
+GET {{IviMessageServer_HostAddress}}/
+Accept: application/json
+
+###

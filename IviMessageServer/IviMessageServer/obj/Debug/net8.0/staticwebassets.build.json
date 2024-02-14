@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "AgwMrdAQMjG4ULCUj3kSa8Qck/E3pdf+m7YEKfMGog8=",
+  "Source": "IviMessageServer",
+  "BasePath": "_content/IviMessageServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
