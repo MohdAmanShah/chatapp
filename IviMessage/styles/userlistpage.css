@@ -61,5 +61,12 @@
     box-shadow: 0 0 2px 0 white;
     border: none;
     border-radius: .5rem;
+}
 
+.find-new-chat-button:hover,
+.find-new-chat-button:focus {
+    background-color: var(--text-background-color);
+    color: var(--accent-color);
+    outline: none;
+    box-shadow: 0 0 2px 2px var(--accent-color);
 }
