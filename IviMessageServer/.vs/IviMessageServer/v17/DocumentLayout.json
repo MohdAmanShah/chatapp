@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\services\\socket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\services\\socket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\dataaccess\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\repository\\interface\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\services\\isocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\services\\isocket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\datamodels\\payload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\datamodels\\payload.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|d:\\work\\softwaredevelopment\\ivimessage\\ivimessageserver\\ivimessageserver\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D89E8AAD-CA43-4760-9061-FE88C5B61CCD}|IviMessageServer\\IviMessageServer.csproj|solutionrelative:ivimessageserver\\repository\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 455,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,29 +54,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\DataAccess\\DataAccess.cs",
-              "RelativeDocumentMoniker": "IviMessageServer\\DataAccess\\DataAccess.cs",
-              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\DataAccess\\DataAccess.cs",
-              "RelativeToolTip": "IviMessageServer\\DataAccess\\DataAccess.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAEAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "IviMessageServer\\Repository\\UserRepository.cs",
+              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "IviMessageServer\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAcwKIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T11:47:35.005Z",
+              "WhenOpened": "2024-02-21T11:25:40.536Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "IviMessageServer\\Repository\\Interface\\IUserRepository.cs",
+              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Repository\\Interface\\IUserRepository.cs",
+              "RelativeToolTip": "IviMessageServer\\Repository\\Interface\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T11:24:54.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Payload.cs",
+              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\DataModels\\Payload.cs",
+              "RelativeDocumentMoniker": "IviMessageServer\\DataModels\\Payload.cs",
+              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\DataModels\\Payload.cs",
+              "RelativeToolTip": "IviMessageServer\\DataModels\\Payload.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T04:43:23.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Socket.cs",
+              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Services\\Socket.cs",
+              "RelativeDocumentMoniker": "IviMessageServer\\Services\\Socket.cs",
+              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Services\\Socket.cs",
+              "RelativeToolTip": "IviMessageServer\\Services\\Socket.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAADYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T04:39:38.499Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISocket.cs",
+              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Services\\ISocket.cs",
+              "RelativeDocumentMoniker": "IviMessageServer\\Services\\ISocket.cs",
+              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Services\\ISocket.cs",
+              "RelativeToolTip": "IviMessageServer\\Services\\ISocket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T04:39:04.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "IviMessageServer\\Controllers\\UserController.cs",
               "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Controllers\\UserController.cs",
               "RelativeToolTip": "IviMessageServer\\Controllers\\UserController.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAWwDYAAAAIAAAA",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADkAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-15T10:04:38.093Z",
+              "WhenOpened": "2024-02-21T04:14:18.124Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Repository\\Repository.cs",
+              "RelativeDocumentMoniker": "IviMessageServer\\Repository\\Repository.cs",
+              "ToolTip": "D:\\Work\\SoftwareDevelopment\\IviMessage\\IviMessageServer\\IviMessageServer\\Repository\\Repository.cs",
+              "RelativeToolTip": "IviMessageServer\\Repository\\Repository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T04:14:08.77Z"
             }
           ]
         },

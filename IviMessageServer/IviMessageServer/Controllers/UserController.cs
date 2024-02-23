@@ -1,38 +1,50 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using IviMessageServer.Data_Access;
 using IviMessageServer.DataModels;
 using System.Text.Json;
-using System.Runtime.InteropServices;
 using System.Net.WebSockets;
 using System.Text;
 using System.Collections.Concurrent;
-using System.Runtime.CompilerServices;
+using IviMessageServer.Repository.Interface;
+using System.Collections.Generic;
+using IviMessageServer.Services;
 namespace IviMessageServer.Controllers
 {
     [ApiController]
-    [Route("/users")]
+    [Route("[Controller]")]
     public class UserController : ControllerBase
     {
-        #region Controllers
-        private readonly DataAccess da;
-        private ConcurrentDictionary<WebSocket, int> connections;
-        public UserController()
+        private IUnitOfWork unitOfWork;
+        private ISocket socket;
+        public UserController(IUnitOfWork unitOfWork, ISocket socket)
         {
-            connections = new ConcurrentDictionary<WebSocket, int>();
-            this.da = new DataAccess();
+            this.unitOfWork = unitOfWork;
+            this.socket = socket;
         }
-        [HttpPost("adduser")]
-        public IActionResult Post([FromBody] User user)
+        [HttpGet]
+        public IActionResult Get()
         {
-            user.Id = da.AddUser(user);
+            return Ok("Connected");
+        }
+        [HttpPost("add")]
+        public IActionResult UserLogin([FromBody] User user)
+        {
+            user.Id = unitOfWork.UserRepository.AddUser(user);
             string result = JsonSerializer.Serialize(user);
             return Ok(result);
         }
-        [HttpDelete("removeuser/{Id?}")]
-        public IActionResult DeleteUser(int id)
+
+        [HttpGet("GetUser/{id:int?}")]
+        public IActionResult GetUser(int id)
         {
-            da.RemoveUser(id);
-            return Ok(id.ToString());
+            Chat chat = unitOfWork.UserRepository.SelectRandomUser(id);
+            return Ok(JsonSerializer.Serialize(chat));
+        }
+        [HttpDelete("deleteChat/{id:int?}")]
+        public IActionResult DeleteChat(int id, [FromQuery] int RecipientId, [FromQuery] int InitiatorId)
+        {
+            string result = unitOfWork.UserRepository.DeleteChat(id);
+            socket.HandleChatClose(new int[] { RecipientId }, InitiatorId).GetAwaiter();
+            return Ok(result);
         }
 
         [HttpGet("ws/{id}")]
@@ -41,50 +53,15 @@ namespace IviMessageServer.Controllers
             if (HttpContext.WebSockets.IsWebSocketRequest)
             {
                 using var websocket = await HttpContext.WebSockets.AcceptWebSocketAsync();
-                await HandleConnections(websocket, id);
+                await socket.HandleConnections(websocket, id);
+                int[] Ids = unitOfWork.UserRepository.DeleteChats(id);
+                socket.HandleChatClose(Ids, id);
+                unitOfWork.UserRepository.RemoveUser(id);
             }
             else
             {
                 HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
             }
         }
-        #endregion Controllers
-
-        #region SocketHandlers
-        private async Task HandleConnections(WebSocket webSocket, int Id)
-        {
-            connections.TryAdd(webSocket, Id);
-            try
-            {
-                var buffer = new byte[1024 * 4];
-                var receiveResult = await webSocket.ReceiveAsync(
-                    new ArraySegment<byte>(buffer), CancellationToken.None);
-
-                string message = $"Hello Client {connections[webSocket]}";
-                byte[] messageBytes = Encoding.UTF8.GetBytes(message);
-                while (!receiveResult.CloseStatus.HasValue)
-                {
-                    await webSocket.SendAsync(
-                        new ArraySegment<byte>(messageBytes),
-                        WebSocketMessageType.Text,
-                        true,
-                        CancellationToken.None);
-
-                    receiveResult = await webSocket.ReceiveAsync(
-                        new ArraySegment<byte>(buffer), CancellationToken.None);
-                }
-
-                connections.TryRemove(webSocket, out int CID);
-                await webSocket.CloseAsync(
-                    receiveResult.CloseStatus.Value,
-                    receiveResult.CloseStatusDescription,
-                    CancellationToken.None);
-            }
-            catch (Exception ex)
-            {
-
-            }
-        }
-        #endregion SocketHandlers
     }
 }

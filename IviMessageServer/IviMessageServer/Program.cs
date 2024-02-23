@@ -1,7 +1,13 @@
+using IviMessageServer.Repository;
+using IviMessageServer.Repository.Interface;
+using IviMessageServer.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddSingleton<ISocket, Socket>();
 
 var app = builder.Build();
 

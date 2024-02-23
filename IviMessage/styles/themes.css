@@ -8,7 +8,8 @@
     --body-background-color: rgb(224, 222, 222);
     --text-background-color: #fcfcfc;
     --danger: #e05757;
-    --accent-color: #579ee0;
+    /* --accent-color: #579ee0; */
+    --accent-color: #83cdff;
     --sender: var(--accent-color);
     --reciever: rgb(59, 176, 59);
     --message-text-color: rgb(254, 255, 248);

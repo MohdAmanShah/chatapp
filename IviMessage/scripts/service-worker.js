@@ -5,8 +5,11 @@ self.addEventListener('install', event => {
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/scripts/site-scripts/script.js',
-                '/styles/style.css'
+                '/scripts/app.js',
+                '/scripts/components.js',
+                '/scripts/datamodels.js',
+                '/styles/style.css',
+                '/styles/themes.css',
                 // Add other static assets here
             ]);
         })
